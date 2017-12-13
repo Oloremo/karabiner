@@ -1,8 +1,8 @@
 {
-  "title": "For Russian",
+  "title": "For English",
   "rules": [
     {
-      "description": "Move ё to tilde in Russian layout",
+      "description": "Moved tilde to sane location in English layout",
       "manipulators": [
         {
           "conditions": [
@@ -10,14 +10,14 @@
               "type": "input_source_if",
               "input_sources": [
                 {
-                  "language": "ru"
+                  "language": "en"
                 }
               ]
             }
           ],
           "type": "basic",
           "from": {
-            "key_code": "non_us_backslash",
+            "key_code": "grave_accent_and_tilde",
             "modifiers": {
               "optional": [
                 "any"
@@ -26,7 +26,7 @@
           },
           "to": [
             {
-              "key_code": "backslash"
+              "key_code": "non_us_backslash"
             }
           ]
         }
